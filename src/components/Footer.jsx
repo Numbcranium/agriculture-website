@@ -42,10 +42,18 @@ function Footer() {
         <h3>Contact us</h3>
         <p>agriinfo@gmail.com</p>
         <p>+(201)-2456-991-223</p>
+    </div>
       </div>
+      <div className="footer-bottom">
+        <p>
+          <p>Terms & conditions</p>  
+          <p>Privacy policy</p>
+        </p>
+        <h7>
+          Copyright 2022 by Agrobi Farm<br />
+          Webflow Templates by SN
+        </h7>
       </div>
-   
-
     </div>
 
   );
