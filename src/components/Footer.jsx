@@ -9,13 +9,16 @@ function Footer() {
          <div className="newsletter">
           <h2>Newsletter</h2>
           <p>Sign up for our newsletter. Fresh news, the best e-books, and many more.</p>
+          <div className="input-button_newsletter">
           <input type="text" placeholder="Example Text" />
           <button className="subscribe-button">Subscribe</button>
+          </div>
         </div>
       <div className="left-news">
         <div className="footer-logo">
           
           <img src={logo} alt="Agrobi Farm Logo" />
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis blanditiis ipsam sed suscipit perferendis modi est harum pariatur autem vero? In, voluptatibus vitae de</p>
         </div>
      
       </div>

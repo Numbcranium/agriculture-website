@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #4c4d4d; /* Dark background */
+  background-color: #4c4d4dee; /* Dark background */
   color: #fff; /* White text */
   padding: 20px;
   height: auto; /* Adjust height to fit content */
@@ -7,6 +7,23 @@
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
   justify-content: space-between; /* Space out items */
 }
+.footer-container ul li {
+  color: rgb(160, 159, 159);
+  font-weight: lighter;
+}
+.footer-container  p {
+  color: rgb(160, 159, 159);
+    font-weight: lighter;
+}
+.footer-container ul li:hover {
+  color: #ffba00;
+  cursor: pointer; 
+}
+.footer-container p :hover {
+  color: #ffba00;
+  cursor: pointer; 
+}
+
 .footer-content {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
@@ -14,18 +31,34 @@
   width: 100%; /* Full width */
   margin-top: 200px;
 }
-.newsletter {
-
- 
+.newsletter { 
   margin-top: -10%; /* Adjust margin for better alignment */
+}
+.input-button_newsletter{
+    display: flex;
+margin-left: 600px;
 
+  gap: 10px; 
+  margin-top: -6%; /* Space above the input/button */
+}
+.input-button_newsletter input {
+  padding: 10px;
+  border: none;
+  height:60px;
+  border-radius: 5px;
+  width: 450px; 
 }
 .left-news {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align items to the start */
-margin-left: -40%;
+margin-left: -98%;
   width:350px;
+}
+.left-news p {
+  margin-top: 10px;
+  line-height: 1.5; 
+  text-align: left; /* Align text to the left */
 }
 
 .footer-logo img {
@@ -35,7 +68,7 @@ margin-left: -40%;
 }
 
 .navigation, .services, .contact {
-  flex: 1 1 200px; /* Allow it to grow and shrink */
+  flex: 1 1 280px; /* Allow it to grow and shrink */
   margin-top: 40px; /* Adjust margin for better alignment */
 }
 
@@ -62,6 +95,7 @@ ul li {
   border: none; /* No border */
   padding: 10px 20px; /* Padding for the button */
   cursor: pointer; /* Pointer cursor on hover */
+  width: 150px; /* Width of the button */
 }
 
 .subscribe-button:hover {
