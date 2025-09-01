@@ -9,12 +9,12 @@ function About() {
     if (!container) return;
 
     let scrollAmount = 0;
-    const scrollStep = 250; // scroll by one item width approx
-    const scrollInterval = 5000; // 5 seconds
+    const scrollStep = 380; 
+    const scrollInterval = 5000; 
 
     const intervalId = setInterval(() => {
       if (scrollAmount + container.clientWidth >= container.scrollWidth) {
-        scrollAmount = 0; // reset scroll to start
+        scrollAmount = 0; 
       } else {
         scrollAmount += scrollStep;
       }
@@ -105,7 +105,7 @@ function About() {
      </div>
 
      <div className="about-fifth-section">
-       <h2 className="fifth-heading">The Openfield Timeline</h2>
+       <h2 className="fifth-heading"><p>The</p> Openfield Timeline</h2>
        <div className="timeline-container" ref={timelineRef}>
          <div className="timeline-item">
            <h3 className="timeline-year">2019</h3>
@@ -128,9 +128,56 @@ function About() {
              placerat suscipit. Vestibulum vitae nunc vitae nisi rutrum dolor sit amet, consectetur adipiscing elit. Cras
            </p>
          </div>
+          <div className="timeline-item">
+           <h3 className="timeline-year">2001</h3>
+           <h4 className="timeline-title">Started the Company</h4>
+           <p className="timeline-description">
+             placerat suscipit. Vestibulum vitae nunc vitae nisi rutrum dolor sit amet, consectetur adipiscing elit. Cras
+           </p>
+         </div>
+          <div className="timeline-item">
+           <h3 className="timeline-year">2002</h3>
+           <h4 className="timeline-title">Started the Company</h4>
+           <p className="timeline-description">
+             placerat suscipit. Vestibulum vitae nunc vitae nisi rutrum dolor sit amet, consectetur adipiscing elit. Cras
+           </p>
+         </div>
        </div>
      </div>
    </div>
+
+     <div className="about-sixth-section">
+       <h2 className="sixth-heading">Meet Our Team</h2>
+       <div className="team-container">
+         <div className="team-card">
+           <img className="team-photo" src="/src/assets/person avatar.jpg" alt="Team Member 1" />
+           <p className="team-role">Marketing manager</p>
+           <p className="team-name">Swasme swagger</p>
+           <div className="social-icons">
+             <a href="#" aria-label="Facebook">F</a>
+             <a href="#" aria-label="Twitter">T</a>
+           </div>
+         </div>
+         <div className="team-card highlight-card">
+           <img className="team-photo" src="/src/assets/person avatar.jpg" alt="Team Member 2" />
+           <p className="team-role">Marketing manager</p>
+           <p className="team-name">Swasme swagger</p>
+           <div className="social-icons">
+             <a href="#" aria-label="Facebook">F</a>
+             <a href="#" aria-label="Twitter">T</a>
+           </div>
+         </div>
+         <div className="team-card">
+           <img className="team-photo" src="/src/assets/person avatar.jpg" alt="Team Member 3" />
+           <p className="team-role">Marketing manager</p>
+           <p className="team-name">Swasme swagger</p>
+           <div className="social-icons">
+             <a href="#" aria-label="Facebook">F</a>
+             <a href="#" aria-label="Twitter">T</a>
+           </div>
+         </div>
+       </div>
+     </div>
    </>
   );
 }
