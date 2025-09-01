@@ -1,7 +1,8 @@
 .about-top-section {
   width: 100%;
   height: 400px;
-  background-image: url('../assets/grass-image.jpeg');
+  margin-top: -100px;
+  background-image: url('../assets/close-view-grass-with-dew-drops.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
