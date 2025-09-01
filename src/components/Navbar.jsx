@@ -13,8 +13,8 @@ function Navbar() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/services" style={{marginLeft:"60px", marginRight:"0px"}}>Services</Link></li>
-          <li><a href="#contact">Blog</a></li>
-          <li><a href="#RequestQuote">Contact</a></li>         
+          <li><a href="#">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>         
 
         </ul>
         <ul style={{display:"flex", flexDirection:"row",gap:"30px", listStyle:"none"}}>
