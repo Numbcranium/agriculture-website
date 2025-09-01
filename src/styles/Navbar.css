@@ -1,0 +1,28 @@
+
+.navbar-title{
+    width: 150px;
+    height: 52px;
+    background-position: 50%;
+    background-size: cover;
+ background-image: url('../assets/logo.png');
+}
+.navbar-links a{
+    text-decoration: none;
+    list-style: none;
+color: black;
+font-weight: 700;
+margin-right: 45px;
+margin-left: 60%;
+}
+.navbar-links{
+    margin-left: 400px;
+}
+.navbar{
+    background-color: transparent;
+}
+.light-bg .navbar-links a {
+    color: white;
+}
+.active {
+    border-bottom: 2px solid #ffba00;
+}
