@@ -147,15 +147,15 @@ function About() {
    </div>
 
      <div className="about-sixth-section">
-       <h2 className="sixth-heading">Meet Our Team</h2>
+       <h2 className="sixth-heading"><p>Meet</p> Our Team</h2>
        <div className="team-container">
          <div className="team-card">
            <img className="team-photo" src="/src/assets/person avatar.jpg" alt="Team Member 1" />
            <p className="team-role">Marketing manager</p>
            <p className="team-name">Swasme swagger</p>
            <div className="social-icons">
-             <a href="#" aria-label="Facebook">F</a>
-             <a href="#" aria-label="Twitter">T</a>
+             <div  className="facebook-label"></div>
+             <div  className="twitter-label"></div>
            </div>
          </div>
          <div className="team-card highlight-card">
@@ -163,8 +163,8 @@ function About() {
            <p className="team-role">Marketing manager</p>
            <p className="team-name">Swasme swagger</p>
            <div className="social-icons">
-             <a href="#" aria-label="Facebook">F</a>
-             <a href="#" aria-label="Twitter">T</a>
+             <div  className="facebook-label"></div>
+             <div  className="twitter-label"></div>
            </div>
          </div>
          <div className="team-card">
@@ -172,8 +172,8 @@ function About() {
            <p className="team-role">Marketing manager</p>
            <p className="team-name">Swasme swagger</p>
            <div className="social-icons">
-             <a href="#" aria-label="Facebook">F</a>
-             <a href="#" aria-label="Twitter">T</a>
+          <div  className="facebook-label"></div>
+             <div  className="twitter-label"></div>
            </div>
          </div>
        </div>
