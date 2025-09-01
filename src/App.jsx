@@ -15,7 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<ServicePage />} />
       </Routes>
-      <Footer/>w3
+      <Footer/>
     </Router>
   );
 }
