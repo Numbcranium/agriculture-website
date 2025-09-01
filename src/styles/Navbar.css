@@ -9,7 +9,7 @@
 .navbar-links a{
     text-decoration: none;
     list-style: none;
-color: white;
+color: black;
 font-weight: 700;
 margin-right: 45px;
 margin-left: 60%;
@@ -19,4 +19,10 @@ margin-left: 60%;
 }
 .navbar{
     background-color: transparent;
+}
+.light-bg .navbar-links a {
+    color: white;
+}
+.active {
+    border-bottom: 2px solid #ffba00;
 }
