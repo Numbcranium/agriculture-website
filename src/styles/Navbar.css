@@ -9,11 +9,14 @@
 .navbar-links a{
     text-decoration: none;
     list-style: none;
-color: black;
+color: white;
 font-weight: 700;
 margin-right: 45px;
 margin-left: 60%;
 }
 .navbar-links{
     margin-left: 400px;
+}
+.navbar{
+    background-color: transparent;
 }
