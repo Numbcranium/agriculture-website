@@ -1,27 +1,45 @@
 import React from "react";
 import "../styles/Contact.css";
+import { FaPhoneAlt, FaEnvelope, FaBuilding } from "react-icons/fa";
 
 function Contact() {
   return (
-    <section id="contact" className="py-5">
-      <div className="container">
-        <h2 className="text-center fw-bold text-success mb-4">Contact Us</h2>
-        <form className="row g-3">
-          <div className="col-md-6">
-            <input type="text" className="form-control" placeholder="Your Name" />
+
+    <section className="contact-section">
+      <div className="contact-container">
+        <div className="contact-left">
+          <p className="contact-subheading">Hello, it's a lot of pain.</p>
+          <h1 className="contact-heading">Get in touch</h1>
+          <p className="contact-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+          </p>
+          <div className="contact-info">
+            <div className="contact-info-item">
+              <FaPhoneAlt className="contact-icon" />
+              <span>+(201)-2456-991-223</span>
+            </div>
+            <div className="contact-info-item">
+              <FaEnvelope className="contact-icon" />
+              <span>agriinfo@gmail.com</span>
+            </div>
+            <div className="contact-info-item">
+              <FaBuilding className="contact-icon" />
+              <span>IRA 4950/3, California, United States of America - 127580</span>
+            </div>
           </div>
-          <div className="col-md-6">
-            <input type="email" className="form-control" placeholder="Your Email" />
-          </div>
-          <div className="col-12">
-            <textarea className="form-control" rows="5" placeholder="Your Message"></textarea>
-          </div>
-          <div className="col-12 text-center">
-            <button type="submit" className="btn btn-success px-5">Send</button>
-          </div>
-        </form>
+        </div>
+        <div className="contact-right">
+          <form className="contact-form">
+            <input type="text" placeholder="Name" name="name" required />
+            <input type="email" placeholder="Email" name="email" required />
+            <input type="tel" placeholder="Phone" name="phone" />
+            <textarea placeholder="Message" name="message" rows="4" required></textarea>
+            <button type="submit" className="submit-button">Submit</button>
+          </form>
+        </div>
       </div>
     </section>
+  
   );
 }
 
