@@ -5,7 +5,8 @@ import '../styles/Navbar.css';
 
 function Navbar() {
   const location = useLocation();
-  const isLightBg = location.pathname === "/" || location.pathname === "/about";
+  // const isLightBg = location.pathname === "/" || location.pathname === "/about";
+  const isLightBg = location.pathname==="/about"
 
   return (
      <>
