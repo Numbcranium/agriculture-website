@@ -23,6 +23,9 @@ margin-left: 60%;
 .light-bg .navbar-links a {
     color: white;
 }
+.light-bg .navbar-title{
+ background-image: url('../assets/logo2.png');
+}
 .active {
     border-bottom: 2px solid #ffba00;
 }
