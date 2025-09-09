@@ -1,0 +1,172 @@
+.blog-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Search Bar */
+.blog-search {
+  margin-bottom: 1.5rem;
+}
+.blog-search input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.blog-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Blog Post Card */
+.post-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.post-content h2 {
+  font-size: 1.25rem;
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.post-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.read-more {
+  font-size: 0.9rem;
+  color: #66b608;
+  text-decoration: none;
+}
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.pagination button.active {
+  background-color: #66b608;
+  color: white;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid #66b608;
+  color: #66b608;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.pagination button:hover:not(:disabled) {
+  background-color: #66b608;
+  color: #fff;
+}
+
+/* Sidebar */
+.blog-sidebar {
+  flex: 1;
+}
+
+.categories h3,
+.sidebar-newsletter h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+.categories li {
+  margin-bottom: 0.5rem;
+  color: #555;
+  cursor: pointer;
+}
+.categories li:hover {
+  color: #66b608;
+}
+
+.sidebar-newsletter p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-newsletter input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sidebar-newsletter button {
+  padding: 0.5rem;
+  background-color: #66b608;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.sidebar-newsletter button:hover {
+  background-color: #5a8c37;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .blog-page {
+    flex-direction: row;
+  }
+
+  .blog-content {
+    flex: 2;
+  }
+
+  .post-preview {
+    flex-direction: row;
+  }
+
+  .post-image {
+    flex: 1;
+  }
+
+  .post-content {
+    flex: 2;
+  }
+}
