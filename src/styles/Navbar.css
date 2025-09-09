@@ -18,8 +18,9 @@ margin-left: 60%;
     margin-left: 400px;
 }
 .navbar{
-    background-color: transparent;
+    background-color:transparent;
 }
+
 .light-bg .navbar-links a {
     color: white;
 }

@@ -5,13 +5,13 @@ import '../styles/Navbar.css';
 
 function Navbar() {
   const location = useLocation();
-  // const isLightBg = location.pathname === "/" || location.pathname === "/about";
-  const isLightBg = location.pathname==="/about"
+  const isLightBg = location.pathname === "/" || location.pathname === "/about";
+  // const isLightBg = location.pathname==="/about"
 
   return (
      <>
       <nav className={`navbar ${isLightBg ? "light-bg" : ""}`} style={{position: "relative"}}>
-      <div className="navbar-container" style={{ display: 'flex', justifyContent: '', alignItems: 'center',padding:"10px 20px"}}>
+      <div className="navbar-container" style={{ display: 'flex', justifyContent: '', alignItems: 'center',padding:"10px 20px",zIndex:"100"}}>
         <h1 className="navbar-title" ></h1>
         <ul className="navbar-links" style={{ display: 'flex',fontSize:"18px", justifyContent: 'space-between', alignItems: 'center', listStyle:"none", textDecoration:"none", marginTop:"10px" }}>
           <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
