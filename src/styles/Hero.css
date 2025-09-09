@@ -17,13 +17,20 @@ body{
     background-image: url("../assets/images/farming-video.jpg");
 
 }
-video{
+/* video{
     position: absolute;
     z-index: -100;
-    background-image: url("../assets/images/farming-video.jpg");
+    background-image: url("../assets/farming-video.jpg");
     height: 100%;
     width: 100%;
-}
+} */
+ .video{
+    position: absolute;
+    z-index: -100;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
 .intro{
     display: flex;
     flex-direction: column;

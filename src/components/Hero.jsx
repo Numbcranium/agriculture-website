@@ -2,19 +2,20 @@ import React from "react";
 import '../styles/Hero.css';
 import '../styles/heroResponsive.css';
 //import bgGreen from '../assets/images/bg-green.png';
-//import farming from '../assets/images/farming-img.jpg';
-//import plantingIcon from '../assets/images/plantingIcon.png';
+import farmingvideo from '../assets/farming-video.mp4';
+import plantingIcon from '../assets/plantingIcon.jpg';
+import farming from '../assets/farming.jpg';
 //import mowingIcon from '../assets/images/mowingIcon.png';
-//import gardeningIcon from '../assets/images/gardeningIcon.png';
+import gardeningIcon from '../assets/gardeningIcon.jpg';
 
 function Hero() {
   return (
     <section id="home">
       <div className="hero">
         
-        {/* <video id="f6841cd7-bc01-e16a-959d-e6c1dc1b47c8-video" autoPlay loop style={{backgroundImage: url("../assets/images/farming-video.jpg")}}><source src="https://cdn.prod.website-files.com/6317f8c46ec157a19839cf33/6317f8c46ec157369839cfcf_bg%20video-transcode.mp4" data-wf-ignore="true"/>
+         <video id="f6841cd7-bc01-e16a-959d-e6c1dc1b47c8-video" autoPlay loop style={{backgroundImage:"url('../assets/farming-video')"}} className="video"><source src="https://cdn.prod.website-files.com/6317f8c46ec157a19839cf33/6317f8c46ec157369839cfcf_bg%20video-transcode.mp4" data-wf-ignore="true"/>
           <source src="https://cdn.prod.website-files.com/6317f8c46ec157a19839cf33/6317f8c46ec157369839cfcf_bg%20video-transcode.webm" data-wf-ignore="true"/></video>
-         */}
+         
         <div className="intro">
           <div className="heading">                           
             <h1>Grow Fresh, 
@@ -33,7 +34,7 @@ function Hero() {
           <a href="" className="discover more">Discover More</a>
         </div>
         <div className="illustration">
-          {/* <img src={farming} alt="" /> */}
+          <img src={farming} alt="" />
           
         </div>
       </div>
@@ -41,7 +42,7 @@ function Hero() {
         <div className="floatingSteps">
           <div className="steps">
             <div className="stage">
-              {/* <img src={plantingIcon} alt="" /> */}
+              <img src={plantingIcon} alt="" />
               <h2>Planting</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse var</p>
             </div>
@@ -51,7 +52,7 @@ function Hero() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse var</p>
             </div>
             <div className="stage">
-              {/* <img src={gardeningIcon} alt="" /> */}
+              <img src={gardeningIcon} alt="" />
               <h2>Gardening</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse var</p>
             </div>
